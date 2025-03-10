@@ -1,0 +1,291 @@
+body {
+    font-family: "42dot Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #e0e0e0;
+  }
+
+
+/* 헤더 영역 */
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e0e0e0;
+    height: 72px;
+    align-items: center;
+    padding: 0 40px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+main {
+    margin-top: 72px;
+}
+
+.header-logo {
+    color : darkgreen;
+    font-size: 24px;
+    font-weight: 600;
+}
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-list {
+    display: inline;
+    font-size: 16px;
+}
+
+#contact{
+    background-color: darkgreen;
+    color: #e0e0e0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 40px;
+}
+
+#contact:hover{
+    background-color: darkolivegreen;
+    font-weight: 800;}
+
+#contact:active{
+    background-color: rgb(0, 42, 0);
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+/*텍스트 컬러*/
+.text-color-default {
+    color : darkgreen;
+}
+
+.text-color-primary {
+    color : orange;
+}
+
+.text-color-white {
+    color: whitesmoke;
+}
+
+/*텍스트 사이즈*/
+.sub-heading {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.05px;
+}
+
+.body {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+}
+
+
+/*배너 섹션*/
+#first {
+    background-color: whitesmoke;
+    height: 640px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 40px;
+
+        /* 로고를 배경으로 설정 */
+        background-color: rgba(255, 255, 255, 0.6); /* 배경색을 반투명하게 설정 */
+        background-image: url('logo2.png'); /* 배경 이미지 적용 */
+        background-size: contain; /* 이미지가 전체를 포함하도록 */
+        background-position: right center; /* 오른쪽 중앙 정렬 */
+        background-repeat: no-repeat; /* 반복 금지 */
+}
+
+#cont {
+        max-width: 1320px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* `left` → `flex-start`로 수정 */
+        gap: 8px;
+        padding: 0px 40px;
+        margin: -5px;
+    }
+
+.title-set{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.paragraph {
+    max-width: 100%;
+    font-weight: 500;
+}
+
+.btn-primary{
+    display: flex;
+    align-items: center;
+    height: 48px;
+    background-color: #e0e0e0;
+    padding: 0 24px;
+    color: darkgreen;
+    font-weight: 550;
+    border-radius: 100px;
+    font-size: 16px;
+}
+
+.btn-primary:hover{
+    background-color: grey;
+    color: darkgreen;
+    font-weight: 600;
+    transform: scale(1.01);
+    transition: all 0.5s ease-in;
+
+}
+
+
+/*포트폴리오 섹션*/
+
+.portfolio-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(128, 128, 128, 0.8); /* 회색, 약간 투명 */
+    color: white; /* 화살표 색상 */
+    border: none;
+    padding: 12px 18px;
+    font-size: 28px; /* 글자 크기 */
+    font-weight: bold;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, opacity 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* 약간 입체감 */
+    opacity: 0.7; /* 기본 상태에서 살짝 투명 */
+}
+
+.scroll-button:hover {
+    background-color: rgba(100, 100, 100, 1); /* 조금 더 진한 회색 */
+    opacity: 1; /* 호버 시 투명도 제거 */
+    transform: translateY(-50%) scale(1.1); /* 버튼 커지는 효과 */
+}
+
+.scroll-button:active {
+    background-color: rgb(80, 80, 80); /* 클릭 시 어두운 회색 */
+    transform: translateY(-50%) scale(1.05); /* 클릭할 때 살짝 작아짐 */
+}
+
+#scroll-left {
+    left: -10px; /* 왼쪽 버튼 위치 */
+}
+
+#scroll-right {
+    right: -10px; /* 오른쪽 버튼 위치 */
+}
+
+.list{
+    display: flex;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 24px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 20px 50px;
+}
+
+.list-item{
+    display: flex;
+    flex-shrink: 0;
+    width: 480px;
+    height: 240px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    border: 1px solid lightgrey;
+    padding: 12px;
+    gap: 20px;
+
+}
+
+.list-item:hover{
+    transform: scale(1.01);
+}
+
+.list-item img{
+    width: 240px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+
+
+.project-contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+
+.project-name{
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 4px;
+}
+
+
+.project-date{
+    font-size: 12px;
+}
+
+
+.project-desc{
+    padding-top: 16px;
+    font-size: 16px;
+}
+
+.btn-small{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    padding: 8px 16px;
+    color: #e0e0e0;
+    font-weight: 550;
+    border-radius: 100px;
+    font-size: 12px;
+}
+
+/*스크롤바 삭제*/
+.list::-webkit-scrollbar{
+    display: none;
+}

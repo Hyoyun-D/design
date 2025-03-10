@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyoyun</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+   
+</head>
+<body>
+    <header class="header">
+        <a href="#">
+            <img src="logo01.png" alt="Profile"></a>
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-list"><a href="about.html">about</a></li>
+                <li class="nav-list">portfolio</li>
+                <li id="contact"><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="first">
+        <div id="cont">
+            <div class="title-set">
+                <h2 class="text-color-primary sub-heading">Designer Hyoyun</h2>
+                <h3 class="title text-color-default">Passion in <span class="text-color-primary">Every Line</span>
+                <br>Growth in <span class="text-color-primary">Every Design</h3>  
+            </div>      
+                <p class="paragraph body text-color-default">
+                    매 순간 열정을 다하고 모든 디자인을 통해 성장합니다.
+                </p>
+                <br><br>
+            <a href="about.html" class="btn-primary">더 알아보기</a>                
+        </div>
+        
+            </section>
+            
+
+    <section class="portfolio-section">
+        <button id="scroll-left" class="scroll-button">&lt;</button>
+
+            <div class="list">
+            <div class="list-item">
+                <img src="sample.jpg">
+                <div class="project-contents">
+                    <div>
+                        <div class="project-name">프로젝트명</div>
+                        <div class="project-date">00.00.00 ~ 00.00.00</div>
+                        <div class="project-desc">프로젝트 설명</div>
+                    </div>
+                <a href="#" class="btn-small">자세히 보기</a>
+            </div>
+            
+            </div>
+                
+                <div class="list-item">
+                    <img src="sample.jpg">
+                    <div class="project-contents">
+                        <div>
+                            <div class="project-name">프로젝트명</div>
+                            <div class="project-date">00.00.00 ~ 00.00.00</div>
+                            <div class="project-desc">프로젝트 설명</div>
+                        </div>
+                    <a href="#" class="btn-small">자세히 보기</a>
+                </div>
+                </div>
+
+                <div class="list-item">
+                    <img src="sample.jpg">
+                    <div class="project-contents">
+                        <div>
+                            <div class="project-name">프로젝트명</div>
+                            <div class="project-date">00.00.00 ~ 00.00.00</div>
+                            <div class="project-desc">프로젝트 설명</div>
+                        </div>
+                    <a href="#" class="btn-small">자세히 보기</a>
+                </div>
+                </div>   
+                
+                <div class="list-item">
+                    <img src="sample.jpg">
+                    <div class="project-contents">
+                        <div>
+                            <div class="project-name">프로젝트명</div>
+                            <div class="project-date">00.00.00 ~ 00.00.00</div>
+                            <div class="project-desc">프로젝트 설명</div>
+                        </div>
+                    <a href="#" class="btn-small">자세히 보기</a>
+                </div>
+                </div>
+
+        </div>
+
+        <button id="scroll-right" class="scroll-button">&gt;</button>
+        </section>          
+    </main>
+    <footer>
+        <p>copyright © 2025 hyoyuntak all rights reserved</p>
+        <a href=""></a>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const list = document.querySelector(".list");
+            const leftButton = document.getElementById("scroll-left");
+            const rightButton = document.getElementById("scroll-right");
+        
+            leftButton.addEventListener("click", function () {
+                list.scrollBy({ left: -300, behavior: "smooth" }); // 왼쪽으로 300px 이동
+            });
+        
+            rightButton.addEventListener("click", function () {
+                list.scrollBy({ left: 300, behavior: "smooth" }); // 오른쪽으로 300px 이동
+            });
+        });
+        </script>
+</body>
+</html>
